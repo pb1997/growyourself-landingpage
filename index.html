@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Optional: Favicon hinzufügen -->
-    <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Favicon hinzufügen (Verwendet das hochgeladene Logo) -->
+    <link rel="icon" href="input_file_0.png" type="image/png">
 </head>
 <body>
 
     <header class="hero">
         <div class="container">
             <nav>
-                <div class="logo">Grow Yourself</div>
+                 <!-- Logo als Bild implementiert -->
+                <div class="logo">
+                     <img src="input_file_0.png" alt="Grow Yourself Logo" class="logo-image">
+                     <!-- Optional: Text neben dem Logo -->
+                     <!-- <span class="logo-text">Grow Yourself</span> -->
+                </div>
                 <!-- Optional: Navigationslinks (z.B. #features) -->
                 <!-- <ul class="nav-links">
                     <li><a href="#features">Features</a></li>
@@ -24,66 +29,63 @@
                 </ul> -->
             </nav>
             <div class="hero-content">
-                <h1>Level Up Your Life.</h1>
-                <p class="subtitle">Die erste App, die persönliche Weiterentwicklung wie ein Spiel gestaltet. Entdecke dein Potenzial, erreiche deine Ziele – Schritt für Schritt, Level für Level.</p>
-                <a href="#signup" class="cta-button">Erhalte frühzeitigen Zugang</a>
+                 <!-- Überschrift leicht angepasst für mehr Gewicht -->
+                <h1>Dein Leben. Dein Level Up.</h1>
+                <p class="subtitle">Grow Yourself verwandelt persönliche Entwicklung in ein motivierendes Spiel. Entfalte dein Potenzial, erreiche Ziele – täglich, messbar, spielerisch.</p>
+                <a href="#signup" class="cta-button">Frühzugang sichern</a>
                  <!-- === PLACEHOLDER: App Mockup === -->
                  <!-- Ersetze dies durch ein attraktives Mockup deiner App auf einem iPhone -->
                  <div class="placeholder-image hero-image">
                     <span>App Mockup/Screenshot hier einfügen (z.B. 800x600px)</span>
                  </div>
                  <!-- ============================== -->
-                 <p class="coming-soon">🚀 Bald verfügbar für iOS!</p>
+                 <p class="coming-soon">🚀 Bald im App Store!</p>
             </div>
         </div>
     </header>
 
     <section id="problem-solution" class="problem-solution">
         <div class="container">
-            <h2>Persönliches Wachstum, neu gedacht.</h2>
-            <p>Sich selbst weiterzuentwickeln fühlt sich oft abstrakt und überfordernd an. Wo fängt man an? Wie bleibt man motiviert? Grow Yourself wandelt deine Ambitionen in einen klaren, greifbaren und motivierenden Weg um.</p>
-            <!-- === PLACEHOLDER: Symbolische Grafik === -->
-            <!-- Optional: Füge hier eine Grafik ein, die Wachstum oder Klarheit symbolisiert -->
-            <!-- <div class="placeholder-image symbolic-image">
-                <span>Symbolische Grafik hier (z.B. 400x300px)</span>
-            </div> -->
-            <!-- ===================================== -->
+            <h2>Wachstum neu definiert.</h2>
+            <p>Selbstverbesserung ist eine Reise, kein Rätsel. Grow Yourself gibt dir die Karte und den Kompass. Schluss mit vagen Zielen – her mit klaren Schritten und echter Motivation.</p>
+            <!-- Optional: Symbolische Grafik -->
         </div>
     </section>
 
     <section id="features" class="features">
         <div class="container">
-            <h2>Entdecke die Features, die dich wachsen lassen</h2>
+            <h2>Features, die dich voranbringen</h2>
             <div class="features-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">🧠</div> <!-- Optional: Ersetze durch Icon -->
+                     <!-- Icons können hier als <img> oder SVG eingefügt werden -->
+                    <div class="feature-icon">🧠</div>
                     <h3>KI-gestützte Analyse</h3>
-                    <p>Definiere dein "Traum-Ich" in einem natürlichen Gespräch mit unserer KI. Sie erstellt deinen persönlichen Fahrplan.</p>
+                    <p>Ein natürliches Gespräch formt deinen Weg. Unsere KI hört zu und erstellt deinen persönlichen Entwicklungsplan.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🌳</div> <!-- Optional: Ersetze durch Icon -->
-                    <h3>Dein persönlicher Skill Tree</h3>
-                    <p>Visualisiere deine Wachstumsbereiche und verfolge deinen Fortschritt von Level 1 bis zur Meisterschaft.</p>
+                    <div class="feature-icon">🌳</div>
+                    <h3>Dein Skill Tree</h3>
+                    <p>Visualisiere deine Fortschritte in Bereichen, die dir wichtig sind. Level für Level zur Meisterschaft.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🎯</div> <!-- Optional: Ersetze durch Icon -->
+                    <div class="feature-icon">🎯</div>
                     <h3>Maßgeschneiderte Daily Tasks</h3>
-                    <p>Erhalte tägliche, umsetzbare Aufgaben, die dich deinen Zielen im Skill Tree näherbringen.</p>
+                    <p>Konkrete, tägliche Aufgaben, die dich deinen Zielen im Skill Tree systematisch näherbringen.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">☀️</div> <!-- Optional: Ersetze durch Icon -->
-                    <h3>Good Morning Message (GMM)</h3>
-                    <p>Starte jeden Tag inspiriert mit einer personalisierten Audio-Nachricht – direkt auf dein Handy.</p>
+                    <div class="feature-icon">☀️</div>
+                    <h3>Good Morning Message</h3>
+                    <p>Starte inspiriert in den Tag mit deiner persönlichen Audio-Motivation – anpassbar an deinen Stil.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🔗</div> <!-- Optional: Ersetze durch Icon -->
-                    <h3>Minimale Hürden</h3>
-                    <p>Wir entwickeln Features, die sich nahtlos in deinen Alltag integrieren (z.B. zukünftige Daten-Synchronisation).</p>
+                    <div class="feature-icon">🔗</div>
+                    <h3>Nahtlose Integration</h3>
+                    <p>Wir bauen Hürden ab. Features wie die GMM und geplante Daten-Syncs fügen sich mühelos in deinen Alltag ein.</p>
                 </div>
                  <div class="feature-item">
-                    <div class="feature-icon">💬</div> <!-- Optional: Ersetze durch Icon -->
+                    <div class="feature-icon">💬</div>
                     <h3>Deine Inbox</h3>
-                    <p>Alle wichtigen Updates, Nachrichten und deine GMM an einem zentralen Ort.</p>
+                    <p>Alle Updates, Nachrichten und deine tägliche GMM – übersichtlich an einem Ort.</p>
                 </div>
             </div>
              <!-- === PLACEHOLDER: Feature Screenshots === -->
@@ -98,22 +100,22 @@
 
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2>So einfach startest du dein Wachstum</h2>
+            <h2>Dein Wachstum in 3 Schritten</h2>
             <div class="steps-container">
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Analysieren</h3>
-                    <p>Sprich mit unserer KI über deine Ziele und dein aktuelles Leben.</p>
+                    <p>Definiere im KI-Gespräch deine Ziele und dein aktuelles Ich.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Plan erhalten</h3>
-                    <p>Die KI generiert deinen persönlichen Skill Tree und erste Aufgaben.</p>
+                    <h3>Planen</h3>
+                    <p>Erhalte deinen personalisierten Skill Tree und erste Aufgaben.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Wachsen</h3>
-                    <p>Erledige tägliche Aufgaben, erreiche Meilensteine und steige Level auf.</p>
+                    <p>Erledige Daily Tasks, feiere Meilensteine und steige Level auf.</p>
                 </div>
             </div>
         </div>
@@ -121,32 +123,24 @@
 
      <section id="philosophy" class="philosophy">
         <div class="container">
-            <h2>Mehr als nur eine App – eine Bewegung</h2>
-            <p>Wir glauben daran, dass persönliches Wachstum Spaß machen und für jeden zugänglich sein sollte. Grow Yourself ist dein täglicher Begleiter auf dem Weg zur besten Version deiner selbst. Entwickelt mit Fokus auf Motivation, Struktur und minimale Reibung.</p>
-             <!-- === PLACEHOLDER: Inspirierendes Bild === -->
-             <!-- Optional: Füge hier ein Bild ein, das positive Veränderung oder Community zeigt -->
-            <!-- <div class="placeholder-image inspiring-image">
-                <span>Inspirierendes Bild hier (z.B. 600x400px)</span>
-            </div> -->
-            <!-- ===================================== -->
+            <h2>Mehr als eine App – Deine Wachstumsplattform</h2>
+            <p>Wir glauben, dass jeder das Potenzial hat zu wachsen. Grow Yourself ist dein Werkzeug, dein Coach und deine Community auf dem Weg zur besten Version deiner selbst. Entwickelt für nachhaltige Motivation und echten Fortschritt.</p>
+             <!-- Optional: Inspirierendes Bild -->
         </div>
     </section>
 
 
     <section id="signup" class="signup">
         <div class="container">
-            <h2>Sei unter den Ersten!</h2>
-            <p>Grow Yourself befindet sich aktuell in der Entwicklung. Trage dich hier ein, um exklusive Updates, Einblicke hinter die Kulissen und eine Benachrichtigung zum Start zu erhalten.</p>
+            <h2>Bereit für dein Level Up?</h2>
+            <p>Grow Yourself startet bald! Sei einer der Ersten, die benachrichtigt werden. Erhalte exklusive Updates und einen Blick hinter die Kulissen.</p>
 
-            <!-- Start: Einfaches Formular (Benötigt Backend oder externen Dienst wie Formspree/Netlify Forms zum Funktionieren) -->
-            <form action="#" method="POST" class="signup-form"> <!-- Ändere 'action' für deinen Formular-Endpunkt -->
+            <!-- Start: Einfaches Formular (Backend/Dienst erforderlich) -->
+            <form action="#" method="POST" class="signup-form"> <!-- Ändere 'action' -->
                 <input type="email" name="email" placeholder="Deine E-Mail Adresse" required>
-                <button type="submit" class="cta-button">Auf die Liste</button>
-                 <!-- Hinweis: Dieses Formular sendet ohne Backend/Dienst keine E-Mails. -->
-                 <!-- Alternativ: Link zu einer externen Anmeldeseite (z.B. Mailchimp) -->
-                 <!-- <a href="DEIN_MAILCHIMP_LINK" target="_blank" class="cta-button">Auf die Liste</a> -->
+                <button type="submit" class="cta-button">Informiert mich!</button>
             </form>
-             <p class="privacy-note">Wir respektieren deine Privatsphäre. Kein Spam.</p>
+             <p class="privacy-note">Deine Daten sind sicher. Nur relevante Infos, kein Spam.</p>
             <!-- Ende: Formular -->
 
         </div>
@@ -154,7 +148,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 Grow Yourself. Alle Rechte vorbehalten.</p>
+            <p>© 2024 Grow Yourself Team. Alle Rechte vorbehalten.</p>
             <!-- Optional: Links zu Impressum/Datenschutz -->
             <!-- <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p> -->
         </div>
