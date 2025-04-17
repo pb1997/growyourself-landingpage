@@ -92,11 +92,14 @@ nav {
     align-items: center;
 }
 
+/* --- LOGO GRÖSSE HIER ANGEPASST --- */
 .logo-image {
-    height: 45px; /* Logo Höhe anpassen */
-    width: auto;
-    vertical-align: middle; /* Bessere Ausrichtung falls Text dabei */
+    height: 60px; /* Deutlich größer - Passe diesen Wert bei Bedarf weiter an */
+    width: auto;  /* Breite passt sich automatisch an */
+    vertical-align: middle; /* Behält die vertikale Ausrichtung bei */
 }
+/* --- ENDE LOGO ANPASSUNG --- */
+
 
 /* Optional: Text neben Logo stylen */
 /* .logo-text {
@@ -467,7 +470,9 @@ footer a:hover {
          width: 85%;
          max-width: 380px;
     }
-    .logo-image { height: 40px; } /* Logo etwas kleiner auf Mobil */
+    /* --- RESPONSIVE LOGO GRÖSSE HIER ANGEPASST --- */
+    .logo-image { height: 50px; } /* Auf Tablets immer noch größer als ursprünglich */
+    /* --- ENDE RESPONSIVE LOGO ANPASSUNG --- */
 }
 
 @media (max-width: 480px) {
@@ -491,5 +496,7 @@ footer a:hover {
     .signup { padding: 70px 0; }
     .signup h2 { font-size: 2rem; }
     .signup p { font-size: 1.05rem; }
-     .logo-image { height: 35px; }
+    /* --- RESPONSIVE LOGO GRÖSSE HIER ANGEPASST --- */
+     .logo-image { height: 45px; } /* Auf kleinen Handys auch größer als ursprünglich */
+    /* --- ENDE RESPONSIVE LOGO ANPASSUNG --- */
 }
