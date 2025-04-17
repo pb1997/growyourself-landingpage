@@ -1,0 +1,441 @@
+/* Basic Reset & Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #007AFF; /* Apple Blue - anpassbar */
+    --secondary-color: #34C759; /* Apple Green - anpassbar */
+    --text-color: #1d1d1f; /* Near Black */
+    --light-text-color: #6e6e73;
+    --background-color: #ffffff;
+    --section-background: #f5f5f7; /* Light Gray */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+    margin-bottom: 0.8em;
+    font-weight: 700; /* Bold */
+}
+
+h1 {
+    font-size: 3rem; /* Responsive adjustments below */
+    font-weight: 700; /* Bold */
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5em;
+    color: var(--text-color);
+}
+
+p {
+    margin-bottom: 1em;
+    color: var(--light-text-color);
+    font-size: 1.1rem; /* Slightly larger base paragraph font */
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 40px; /* Space between nav and hero content */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600; /* Semibold */
+    color: var(--text-color);
+}
+
+/* Optional Nav Links styling */
+/* .nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 25px;
+}
+.nav-links a {
+    color: var(--text-color);
+    font-weight: 600;
+} */
+
+/* Hero Section */
+.hero {
+    background-color: var(--background-color);
+    padding: 60px 0 80px; /* More padding */
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px; /* Control content width */
+    margin: 0 auto;
+}
+
+.hero .subtitle {
+    font-size: 1.3rem;
+    color: var(--light-text-color);
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 15px 35px; /* Larger padding */
+    border-radius: 30px; /* Pill shape */
+    font-size: 1.1rem;
+    font-weight: 600; /* Semibold */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    border: none; /* Ensure button styles override defaults */
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker shade */
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    margin-top: 50px;
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Control max size */
+    height: auto; /* Maintain aspect ratio */
+    background-color: #e0e0e0; /* Placeholder background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px; /* Rounded corners for placeholder */
+    aspect-ratio: 4 / 3; /* Example aspect ratio */
+}
+
+.coming-soon {
+    margin-top: 30px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+/* Placeholder Styling */
+.placeholder-image {
+    background-color: #e9ecef; /* Light gray background */
+    border: 1px dashed #adb5bd; /* Dashed border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #6c757d; /* Gray text */
+    font-size: 0.9rem;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 150px; /* Ensure placeholders have some height */
+}
+
+.placeholder-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+}
+
+.placeholder-container .placeholder-image {
+    flex: 1; /* Allow items to grow */
+    min-width: 250px; /* Minimum width before wrapping */
+     max-width: 300px; /* Example max width */
+    aspect-ratio: 9 / 16; /* Portrait aspect ratio for phone screenshots */
+}
+
+/* Sections General Styling */
+section {
+    padding: 80px 0;
+}
+
+section:nth-child(even) {
+    background-color: var(--section-background); /* Alternating background */
+}
+
+/* Problem/Solution Section */
+.problem-solution {
+    text-align: center;
+}
+.problem-solution p {
+     max-width: 750px;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 1.2rem;
+     color: var(--text-color); /* Darker text for emphasis */
+}
+
+/* Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem; /* Adjust icon size */
+    margin-bottom: 15px;
+    /* background-color: var(--primary-color-light); Optional background circle */
+    /* color: var(--primary-color); */
+    /* display: inline-block; */
+    /* width: 60px; */
+    /* height: 60px; */
+    /* line-height: 60px; */
+    /* border-radius: 50%; */
+}
+
+.feature-item h3 {
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: var(--light-text-color);
+}
+
+/* How It Works Section */
+.how-it-works {
+     background-color: var(--background-color); /* White background */
+}
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.step {
+    flex-basis: 30%; /* Approx equal width */
+    min-width: 250px; /* Min width before wrap */
+}
+
+.step-number {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+.step p {
+     font-size: 1rem;
+}
+
+/* Philosophy Section */
+.philosophy {
+     text-align: center;
+}
+
+.philosophy p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+     color: var(--text-color);
+}
+
+.inspiring-image {
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* Signup Section */
+.signup {
+    background-color: var(--primary-color); /* Use primary color */
+    color: #ffffff;
+    text-align: center;
+}
+
+.signup h2 {
+    color: #ffffff;
+}
+
+.signup p {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup-form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.signup-form input[type="email"] {
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc; /* Light border */
+    font-size: 1rem;
+    min-width: 250px; /* Ensure input field is usable */
+    flex-grow: 1; /* Allow input to take available space */
+    max-width: 400px;
+}
+
+.signup-form .cta-button {
+    background-color: #ffffff; /* White button on colored background */
+    color: var(--primary-color);
+    margin-top: 0; /* Remove margin added earlier */
+    border: none;
+    flex-shrink: 0; /* Prevent button from shrinking too much */
+}
+
+.signup-form .cta-button:hover {
+    background-color: #f0f0f0; /* Slightly off-white hover */
+}
+
+.privacy-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Footer */
+footer {
+    background-color: #f5f5f7; /* Match light section background */
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 0; /* Remove space if signup is last */
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+}
+footer a {
+    color: var(--light-text-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .hero .subtitle {
+        font-size: 1.1rem;
+    }
+    .features-grid {
+        grid-template-columns: 1fr; /* Stack features */
+        gap: 30px;
+    }
+    .steps-container {
+        flex-direction: column; /* Stack steps */
+        align-items: center;
+    }
+    .step {
+        flex-basis: auto; /* Reset basis */
+        width: 90%; /* Take most width */
+        margin-bottom: 30px;
+    }
+    .signup-form {
+        flex-direction: column; /* Stack form elements */
+        align-items: stretch; /* Make elements full width */
+    }
+     .signup-form input[type="email"] {
+        width: 100%;
+        max-width: 100%;
+    }
+    .placeholder-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .placeholder-container .placeholder-image {
+         width: 80%; /* Adjust width for stacked images */
+         max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+     h2 {
+        font-size: 1.6rem;
+    }
+     .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    .signup-form input[type="email"] {
+        padding: 12px 15px;
+    }
+    body {
+        font-size: 15px; /* Adjust base font size slightly */
+    }
+    p {
+        font-size: 1rem;
+    }
+}
